@@ -1,1 +1,30 @@
 /*  your css code here. If applicable */
+/* Apply the base styles to the main container element */
+#container {
+    /* i. Set a margin of 20px to the container. */
+    margin: 20px;
+}
+
+/* iii. Use a CSS pseudo-element to insert content before the main content of the container. */
+#container::before {
+    /* The text to be inserted */
+    content: "Before Element ";
+    
+    /* iv. The content inserted before and after should be displayed in red color (#f00). */
+    color: #f00; /* or red; */
+    
+    /* v. The font size of the inserted content should be 20px. */
+    font-size: 20px;
+}
+
+/* iii. Use another CSS pseudo-element to insert content after the main content of the container. */
+#container::after {
+    /* The text to be inserted */
+    content: " After Element";
+    
+    /* iv. The content inserted before and after should be displayed in red color (#f00). */
+    color: #f00; /* or red; */
+    
+    /* v. The font size of the inserted content should be 20px. */
+    font-size: 20px;
+}
